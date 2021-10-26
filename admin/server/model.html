@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>数据模型 | Ark Link开源官方文档</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.495d9abf.css" as="style"><link rel="preload" href="/assets/js/app.747b1b8a.js" as="script"><link rel="preload" href="/assets/js/2.9d837c9f.js" as="script"><link rel="preload" href="/assets/js/21.99157592.js" as="script"><link rel="prefetch" href="/assets/js/10.49615adc.js"><link rel="prefetch" href="/assets/js/11.758fdf9b.js"><link rel="prefetch" href="/assets/js/12.e09f3809.js"><link rel="prefetch" href="/assets/js/13.1cc4b18c.js"><link rel="prefetch" href="/assets/js/14.e8cb9928.js"><link rel="prefetch" href="/assets/js/15.3e690afb.js"><link rel="prefetch" href="/assets/js/16.5fe6ce0e.js"><link rel="prefetch" href="/assets/js/17.5280795a.js"><link rel="prefetch" href="/assets/js/18.5d4c85ce.js"><link rel="prefetch" href="/assets/js/19.e08482c5.js"><link rel="prefetch" href="/assets/js/20.53c8514d.js"><link rel="prefetch" href="/assets/js/22.19aa7771.js"><link rel="prefetch" href="/assets/js/23.150b9efe.js"><link rel="prefetch" href="/assets/js/24.bcd28092.js"><link rel="prefetch" href="/assets/js/25.3c46c352.js"><link rel="prefetch" href="/assets/js/26.b8f51617.js"><link rel="prefetch" href="/assets/js/3.558c17d6.js"><link rel="prefetch" href="/assets/js/4.851bf8c4.js"><link rel="prefetch" href="/assets/js/5.aedbb9bc.js"><link rel="prefetch" href="/assets/js/6.7dd3e1f3.js"><link rel="prefetch" href="/assets/js/7.00cd415f.js"><link rel="prefetch" href="/assets/js/8.1b1a377f.js"><link rel="prefetch" href="/assets/js/9.4e00c854.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.495d9abf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Ark Link开源官方文档</span></a> <div class="links"><!----> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/admin/" class="nav-link router-link-active">
+  后台管理系统
+</a></div><div class="nav-item"><a href="https://github.com/arklnk" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gtihub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/admin/" class="nav-link router-link-active">
+  后台管理系统
+</a></div><div class="nav-item"><a href="https://github.com/arklnk" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gtihub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/admin/" aria-current="page" class="sidebar-link">Ark-Admin</a></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>后端手册</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/admin/server/install.html" class="sidebar-link">安装</a></li><li><a href="/admin/server/api.html" class="sidebar-link">API文档</a></li><li><a href="/admin/server/struct.html" class="sidebar-link">目录结构</a></li><li><a href="/admin/server/controller.html" class="sidebar-link">控制器</a></li><li><a href="/admin/server/model.html" aria-current="page" class="active sidebar-link">数据模型</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/admin/server/model.html#数据模型分类" class="sidebar-link">数据模型分类</a></li><li class="sidebar-sub-header"><a href="/admin/server/model.html#模型基类常用的方法" class="sidebar-link">模型基类常用的方法</a></li><li class="sidebar-sub-header"><a href="/admin/server/model.html#编写模型" class="sidebar-link">编写模型</a></li></ul></li><li><a href="/admin/server/validator.html" class="sidebar-link">验证器</a></li><li><a href="/admin/server/middleware.html" class="sidebar-link">中间件</a></li><li><a href="/admin/server/exception.html" class="sidebar-link">异常处理</a></li><li><a href="/admin/server/crontab.html" class="sidebar-link">定时任务</a></li><li><a href="/admin/server/redis.html" class="sidebar-link">redis缓存</a></li><li><a href="/admin/server/utils.html" class="sidebar-link">工具类</a></li><li><a href="/admin/server/swagger.html" class="sidebar-link">Swagger</a></li><li><a href="/admin/server/command.html" class="sidebar-link">命令行</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>前端手册</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/admin/front/install.html" class="sidebar-link">安装</a></li><li><a href="/admin/front/struct.html" class="sidebar-link">目录结构</a></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>组件文档</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/admin/front/component/table.html" class="sidebar-link">分页表格</a></li><li><a href="/admin/front/component/formdialog.html" class="sidebar-link">表单Dialog</a></li></ul></section></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>其他</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/admin/notice/git.html" class="sidebar-link">工作流规范（基于Git）</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="数据模型"><a href="#数据模型" class="header-anchor">#</a> 数据模型</h1> <h2 id="数据模型分类"><a href="#数据模型分类" class="header-anchor">#</a> 数据模型分类</h2> <div class="language- extra-class"><pre class="language-text"><code>Model:
+    BaseModel.php         # 模型基类（该基类编写了一些常用的操作方法）
+    SysCronLog.php        # 定时任务日志模型
+    SysCronNode.php       # 任务节点模型
+    SysCronTask.php       # 定时任务模型
+    SysDepartment.php     # 部门模型
+    SysLoginLog.php       # 登录日志模型
+    SysMenu.php           # 菜单权限模型
+    SysRole.php           # 角色模式
+    SysUser.php           # 用户模型
+</code></pre></div><h2 id="模型基类常用的方法"><a href="#模型基类常用的方法" class="header-anchor">#</a> 模型基类常用的方法</h2> <div class="language-php extra-class"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">declare</span><span class="token punctuation">(</span>strict_types<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">namespace</span> <span class="token package">App<span class="token punctuation">\</span>Model</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> <span class="token package">App<span class="token punctuation">\</span>Utils<span class="token punctuation">\</span>DataFormat</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Hyperf<span class="token punctuation">\</span>DbConnection<span class="token punctuation">\</span>Model<span class="token punctuation">\</span>Model</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 模型基类
+ */</span>
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">BaseModel</span> <span class="token keyword">extends</span> <span class="token class-name">Model</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * 添加数据
+     *
+     * @param array $data
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">addItem</span><span class="token punctuation">(</span><span class="token keyword type-hint">array</span> <span class="token variable">$data</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * 删除数据
+     *
+     * @param array $where [['','','']]
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">deleteItem</span><span class="token punctuation">(</span><span class="token keyword type-hint">array</span> <span class="token variable">$where</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * 获取一条数据（一维数组）
+     *
+     * @param array $where
+     * @param array|string[] $field
+     * @return array
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">getItem</span><span class="token punctuation">(</span><span class="token keyword type-hint">array</span> <span class="token variable">$where</span><span class="token punctuation">,</span> <span class="token keyword type-hint">array</span> <span class="token variable">$field</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string single-quoted-string">'*'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">array</span>
+    <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * 获取一组数据（二维数组）
+     *
+     * @param array $where [['','','']]
+     * @param string[] $field
+     * @param array $sort
+     * @return array
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">getItems</span><span class="token punctuation">(</span><span class="token keyword type-hint">array</span> <span class="token variable">$where</span><span class="token punctuation">,</span> <span class="token keyword type-hint">array</span> <span class="token variable">$field</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string single-quoted-string">'*'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword type-hint">array</span> <span class="token variable">$sort</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">array</span>
+    <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * 获取区间内数据
+     *
+     * @param array $where [['','','']]
+     * @param string[] $field
+     * @param array $sort
+     * @return array
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">getItemsIn</span><span class="token punctuation">(</span><span class="token keyword type-hint">array</span> <span class="token variable">$where</span><span class="token punctuation">,</span> <span class="token keyword type-hint">array</span> <span class="token variable">$field</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string single-quoted-string">'*'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword type-hint">array</span> <span class="token variable">$sort</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">array</span>
+    <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * 更新数据
+     *
+     * @param array $where [['','','']]
+     * @param array $data
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">updateItem</span><span class="token punctuation">(</span><span class="token keyword type-hint">array</span> <span class="token variable">$where</span><span class="token punctuation">,</span> <span class="token keyword type-hint">array</span> <span class="token variable">$data</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * 获取全部数据
+     *
+     * @param string[] $field
+     * @param array $sort
+     * @return array
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">getAll</span><span class="token punctuation">(</span><span class="token keyword type-hint">array</span> <span class="token variable">$field</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string single-quoted-string">'*'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword type-hint">array</span> <span class="token variable">$sort</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">array</span>
+    <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * 分页获取数据
+     *
+     * @param int $page
+     * @param int $limit
+     * @param array|array[] $where [['','','']]
+     * @param string[] $field
+     * @param array $order
+     * @return array
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">page</span><span class="token punctuation">(</span><span class="token keyword type-hint">int</span> <span class="token variable">$page</span><span class="token punctuation">,</span> <span class="token keyword type-hint">int</span> <span class="token variable">$limit</span><span class="token punctuation">,</span> <span class="token keyword type-hint">array</span> <span class="token variable">$where</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword type-hint">array</span> <span class="token variable">$field</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string single-quoted-string">'*'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword type-hint">array</span> <span class="token variable">$order</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">array</span>
+    <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * 将模型查找的数据转化为数组
+     *
+     * @param $data
+     * @return array
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">formatData</span><span class="token punctuation">(</span><span class="token variable">$data</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">array</span>
+    <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></code></pre></div><blockquote><p>注：</p> <p>1、where条件统一采用二维数组格式</p> <p>2、通过基类模型方法所获取的数据统一为数组形式，并自动将下划线统一转为驼峰形式</p></blockquote> <h2 id="编写模型"><a href="#编写模型" class="header-anchor">#</a> 编写模型</h2> <div class="language- extra-class"><pre class="language-text"><code>php bin/hyperf.php arkGen:model your_table
+</code></pre></div><div class="language-php extra-class"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token keyword">declare</span> <span class="token punctuation">(</span>strict_types<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">namespace</span> <span class="token package">App<span class="token punctuation">\</span>Model</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * @property int $id 
+ * @property string $name 
+ * @property string $label 
+ * @property string $remark 
+ * @property int $root 
+ * @property string $menu_ids 
+ * @property string $department_ids 
+ * @property \Carbon\Carbon $updated_at 
+ * @property \Carbon\Carbon $created_at 
+ */</span>
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">YourTable</span> <span class="token keyword">extends</span> <span class="token class-name">BaseModel</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * The table associated with the model.
+     *
+     * @var string
+     */</span>
+    <span class="token keyword">protected</span> <span class="token variable">$table</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'your_table'</span><span class="token punctuation">;</span>
+    <span class="token comment">/**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */</span>
+    <span class="token keyword">protected</span> <span class="token variable">$fillable</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token comment">/**
+     * The attributes that should be cast to native types.
+     *
+     * @var array
+     */</span>
+    <span class="token keyword">protected</span> <span class="token variable">$casts</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string single-quoted-string">'id'</span> <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">'integer'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'root'</span> <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">'integer'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'updated_at'</span> <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">'datetime'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'created_at'</span> <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">'datetime'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</span></code></pre></div><blockquote><p>注：</p> <p>1、生成的模型，统一继承BaseModel</p></blockquote></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新于:</span> <span class="time">10/15/2021, 5:26:39 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/admin/server/controller.html" class="prev">
+        控制器
+      </a></span> <span class="next"><a href="/admin/server/validator.html">
+        验证器
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.747b1b8a.js" defer></script><script src="/assets/js/2.9d837c9f.js" defer></script><script src="/assets/js/21.99157592.js" defer></script>
+  </body>
+</html>
